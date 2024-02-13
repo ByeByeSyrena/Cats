@@ -17,3 +17,9 @@
   padding: 16px;
   background-color: var(--blue-light);
 }
+
+.container {
+  max-width: 1128px;
+  margin: auto;
+  padding: 0 16px;
+}

@@ -3,7 +3,7 @@ import css from './Header.module.css';
 export const Header = () => {
   return (
     <header className={css.header}>
-      <div className={`${css.container} ${css.headerContainer}`}>
+      <div className={`${css.container} ${css['header-container']}`}>
         <img
           src={require('../../images/icons8.png')}
           alt="cat"

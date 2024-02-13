@@ -19,7 +19,7 @@ export const MainPage = () => {
     <main className={`${css.main}`}>
       <div className={`${css.container}`}>
         <ul className={css.posts}>
-          {mainArticles.map(({ name, image, id }) => (
+          {mainArticles.map(({ name, image, id, imageMobile, imageTablet }) => (
             <li key={id} className={css.post}>
               <Link
                 className={css.postLink}
@@ -28,11 +28,26 @@ export const MainPage = () => {
                   from: location,
                 }}
               >
-                <img
-                  src={require(`../../${image}`)}
-                  alt={image}
-                  className={css['post-img']}
-                />
+                <picture className={css['post-img']}>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcSet={require(`../../${image}`)}
+                  />
+                  <source
+                    media="(min-width: 768px) and (max-width: 1440px)"
+                    srcSet={require(`../../${imageTablet}`)}
+                  />
+                  <source
+                    media="(min-width: 320px) and (max-width: 767px)"
+                    srcSet={require(`../../${imageMobile}`)}
+                  />
+                  <img
+                    src={require(`../../${image}`)}
+                    alt={image}
+                    className={css['post-img']}
+                  />
+                </picture>
+
                 <div className={css.overlay}>
                   <h2 className={`${css['post-title']} ${css['sub-title']}`}>
                     {name}
@@ -45,29 +60,44 @@ export const MainPage = () => {
 
         <section className={`${css.longread}`}>
           <ul className={`${css.blog}`}>
-            {articlesBelow.map(({ name, image, id, description }) => (
-              <li key={id} className={`${css['blog-item']}`}>
-                <Link
-                  to={`/mainpage/${id}`}
-                  state={{
-                    from: location,
-                  }}
-                  className={`${css['blog-link']}`}
-                >
-                  <img
-                    src={require(`../../${image}`)}
-                    alt="cat"
-                    className={`${css['blog-photo']}`}
-                  />
-                  <div className={`${css.wrapper}`}>
-                    <h2 className={`${css['blog-title']} ${css['sub-title']}`}>
-                      {name}
-                    </h2>
-                    <p className={`${css['blog-text']}`}>{description}</p>
-                  </div>
-                </Link>
-              </li>
-            ))}
+            {articlesBelow.map(
+              ({ name, image, id, description, imageMobile }) => (
+                <li key={id} className={`${css['blog-item']}`}>
+                  <Link
+                    to={`/mainpage/${id}`}
+                    state={{
+                      from: location,
+                    }}
+                    className={`${css['blog-link']}`}
+                  >
+                    <picture className={`${css['blog-photo']}`}>
+                      <source
+                        media="(min-width: 768px)"
+                        srcSet={require(`../../${image}`)}
+                      />
+                      <source
+                        media="(min-width: 320px) and (max-width: 767px)"
+                        srcSet={require(`../../${imageMobile}`)}
+                      />
+                      <img
+                        src={require(`../../${image}`)}
+                        alt="cat"
+                        className={`${css['blog-photo']}`}
+                      />
+                    </picture>
+
+                    <div className={`${css.wrapper}`}>
+                      <h2
+                        className={`${css['blog-title']} ${css['sub-title']}`}
+                      >
+                        {name}
+                      </h2>
+                      <p className={`${css['blog-text']}`}>{description}</p>
+                    </div>
+                  </Link>
+                </li>
+              )
+            )}
           </ul>
 
           <div className={css.socials}>
