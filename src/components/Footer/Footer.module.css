@@ -19,8 +19,8 @@
 }
 
 .footer {
+  background-color: white;
   padding: 16px;
-  background-color: var(--blue-light);
   position: absolute;
   bottom: 0;
   width: 100%;
