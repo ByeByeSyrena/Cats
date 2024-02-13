@@ -1,13 +1,37 @@
 {
   "files": {
-    "main.css": "/Cats/static/css/main.7acaea2f.css",
-    "main.js": "/Cats/static/js/main.07d3183d.js",
+    "main.css": "/Cats/static/css/main.5822e596.css",
+    "main.js": "/Cats/static/js/main.630a2562.js",
+    "static/media/background_article.jpg": "/Cats/static/media/background_article.03abdb3920e3e26998b0.jpg",
+    "static/media/cute_small_cat.jpg": "/Cats/static/media/cute_small_cat.b5c30c57bcac34a6a41d.jpg",
+    "static/media/cute_small_cat_tablet.jpg": "/Cats/static/media/cute_small_cat_tablet.1233cb1b27719875bdea.jpg",
+    "static/media/cute_small_cat_mobile.jpg": "/Cats/static/media/cute_small_cat_mobile.78e68b723002e0fd9c63.jpg",
+    "static/media/legs_cat_mobile.jpg": "/Cats/static/media/legs_cat_mobile.18ab224765fdbfb048d9.jpg",
+    "static/media/kittens_mobile.jpg": "/Cats/static/media/kittens_mobile.462ce691502348eabc87.jpg",
+    "static/media/beautiful_kittens_tablet.jpg": "/Cats/static/media/beautiful_kittens_tablet.f148396f3356f3f47560.jpg",
+    "static/media/legs_cat.jpg": "/Cats/static/media/legs_cat.a17d224448d1ece194d5.jpg",
+    "static/media/do_cats_love_owners_mobile.jpg": "/Cats/static/media/do_cats_love_owners_mobile.3ebb3e911c8cf701ed0c.jpg",
+    "static/media/love_owners_mobile.jpg": "/Cats/static/media/love_owners_mobile.2fa29f51db39b29648ef.jpg",
+    "static/media/kittens.jpg": "/Cats/static/media/kittens.ad98a7c10699a65a74df.jpg",
+    "static/media/do_cats_love_owners.jpg": "/Cats/static/media/do_cats_love_owners.ff773276d949071db8d0.jpg",
+    "static/media/love_owners.jpg": "/Cats/static/media/love_owners.b6cdadba9b157d2dc467.jpg",
+    "static/media/beautiful_kittens.jpg": "/Cats/static/media/beautiful_kittens.bf183a0fae77686a8f86.jpg",
+    "static/media/cute_cat.jpg": "/Cats/static/media/cute_cat.84ad43d2bf1b239f8780.jpg",
+    "static/media/cute_cat_tablet.jpg": "/Cats/static/media/cute_cat_tablet.8c1d91d77e0d27dd5749.jpg",
+    "static/media/icons8-instagram.svg": "/Cats/static/media/icons8-instagram.c83e628eea4e83e0d2b6.svg",
+    "static/media/beautiful_kittens_mobile.jpg": "/Cats/static/media/beautiful_kittens_mobile.09c529d81a44a811a9c7.jpg",
+    "static/media/cute_cat_mobile.jpg": "/Cats/static/media/cute_cat_mobile.dcd0f10814a87bcc40a9.jpg",
+    "static/media/icons8-youtube.svg": "/Cats/static/media/icons8-youtube.0ce1286f38211cecbcf6.svg",
+    "static/media/icons8-github.svg": "/Cats/static/media/icons8-github.dc49a960a2d3c5a49c80.svg",
     "index.html": "/Cats/index.html",
-    "main.7acaea2f.css.map": "/Cats/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/Cats/static/js/main.07d3183d.js.map"
+    "static/media/icons8-twitter.svg": "/Cats/static/media/icons8-twitter.fe06d572bd13680e66f4.svg",
+    "static/media/icons8-tiktok.svg": "/Cats/static/media/icons8-tiktok.14f350e3a13d061d74d4.svg",
+    "static/media/icons8-facebook.svg": "/Cats/static/media/icons8-facebook.5e1cb4b86ac3f872dadc.svg",
+    "main.5822e596.css.map": "/Cats/static/css/main.5822e596.css.map",
+    "main.630a2562.js.map": "/Cats/static/js/main.630a2562.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.5822e596.css",
+    "static/js/main.630a2562.js"
   ]
 }
