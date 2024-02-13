@@ -124,15 +124,18 @@ export const MainPage = () => {
             </ul>
           </div>
 
-          <div className={css.video}>
+          <div className={css['video']}>
             <h2 className={`${css['video-title']} ${css['title']}`}>
               Isn't it cute?
             </h2>
             <iframe
+              className={css['responsive-iframe']}
               src="https://www.youtube-nocookie.com/embed/wE8s993ZV-8?si=kIjl1iyQGDI90dpO&amp;controls=0"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
+              width="560"
+              height="315"
             ></iframe>
           </div>
         </section>

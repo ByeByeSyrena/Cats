@@ -3,7 +3,7 @@ import css from './Footer.module.css';
 export const Footer = () => {
   return (
     <footer className={css.footer}>
-      <div className={css.container}>
+      <div className={`${css['container']} ${css['footer-container']}`}>
         <img
           src={require('../../images/icons8.png')}
           alt="cat"

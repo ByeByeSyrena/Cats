@@ -1,0 +1,35 @@
+.container {
+  max-width: 320px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: auto;
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (min-width: 1128px) {
+  .container {
+    max-width: 1128px;
+    margin: auto;
+    padding: 0 16px;
+  }
+}
+
+.background {
+  display: grid;
+  grid-template-rows: 24px 1fr;
+  row-gap: 24px;
+  background-image: url('../../images/background_article.jpg');
+  background-repeat: repeat-y;
+  min-height: 1548px;
+}
+
+/* .content {
+  background-color: white;
+  width: 100%;
+} */

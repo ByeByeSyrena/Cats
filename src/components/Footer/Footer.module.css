@@ -4,9 +4,14 @@
   height: 24px;
 }
 
+.container {
+  max-width: 1128px;
+  margin: auto;
+  padding: 0 16px;
+}
+
 .label {
   color: var(--orange);
-  font-family: var(--common-font);
   font-size: 24px;
   font-weight: 700;
   line-height: 40px;
@@ -16,10 +21,14 @@
 .footer {
   padding: 16px;
   background-color: var(--blue-light);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.container {
-  max-width: 1128px;
-  margin: auto;
-  padding: 0 16px;
+.footer-container {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  gap: 8px;
 }
