@@ -10,8 +10,8 @@ This project is a website dedicated to cats, accessible at `https://byebyesyrena
 
 ## Technologies Used:
 
-1. React: The project is built using React, a JavaScript library for building user interfaces.
-2. Grid CSS: Grid CSS is employed for creating flexible and responsive layout designs.
+- **React**: The project is built using React, a JavaScript library for building user interfaces.
+- **Grid CSS**: Grid CSS is employed for creating flexible and responsive layout designs.
 
 ## Usage:
 
