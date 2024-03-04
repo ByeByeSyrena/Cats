@@ -7,14 +7,13 @@
 .container {
   max-width: 320px;
   margin: auto;
-  padding: 0 16px;
+  padding: 20px 16px;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     margin: auto;
-    padding: 0 16px;
   }
 }
 
@@ -22,7 +21,6 @@
   .container {
     max-width: 1128px;
     margin: auto;
-    padding: 0 16px;
   }
 }
 

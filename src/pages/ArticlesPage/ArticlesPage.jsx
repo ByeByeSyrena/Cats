@@ -5,24 +5,55 @@ import css from './ArticlesPage.module.css';
 
 import data from '../../data/articles.json';
 
+function splitArticle(text) {
+  const textsplit = text.split('.');
+  let phar = [];
+  let element = [];
+  for (let sentence of textsplit) {
+    if (element.length < 5) {
+      element.push(sentence.trim());
+    } else {
+      phar.push(element.join('. '));
+      element = [sentence.trim()];
+    }
+  }
+  if (element.length > 0) {
+    phar.push(element.join('. '));
+  }
+  return phar;
+}
+
 export const ArticlesPage = () => {
   const { id } = useParams();
 
   const article = data.find(item => item.id === id);
+
+  const adjustedArticle = splitArticle(article.article);
 
   const location = useLocation();
   const backLinkHref = location.state?.from ?? '/';
 
   return (
     <div className={`${css['background']}`}>
-      <BackLink to={backLinkHref}>Go back</BackLink>
       <section className={`${css['content']} ${css['container']}`}>
-        {article ? (
-          <h1 className={css['post-title']}>{article.name}</h1>
-        ) : (
-          <p>Article not found</p>
-        )}
-        {article ? <p>{article.article}</p> : <p>Article not found</p>}
+        <BackLink to={backLinkHref}>Go back</BackLink>
+
+        <div className={css.articleGrid}>
+          {article ? (
+            <h1 className={css['post-title']}>{article.name}</h1>
+          ) : (
+            <p>Article not found</p>
+          )}
+          {adjustedArticle ? (
+            <div className={css.articleDiv}>
+              {adjustedArticle.map((group, index) => (
+                <p key={index}>{group}</p>
+              ))}
+            </div>
+          ) : (
+            <p>Article not found</p>
+          )}
+        </div>
       </section>
     </div>
   );
