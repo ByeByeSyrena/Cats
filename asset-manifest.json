@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Cats/static/css/main.5822e596.css",
-    "main.js": "/Cats/static/js/main.630a2562.js",
+    "main.css": "/Cats/static/css/main.807cf5a4.css",
+    "main.js": "/Cats/static/js/main.52e28fc8.js",
     "static/media/background_article.jpg": "/Cats/static/media/background_article.03abdb3920e3e26998b0.jpg",
     "static/media/cute_small_cat.jpg": "/Cats/static/media/cute_small_cat.b5c30c57bcac34a6a41d.jpg",
     "static/media/cute_small_cat_tablet.jpg": "/Cats/static/media/cute_small_cat_tablet.1233cb1b27719875bdea.jpg",
@@ -27,11 +27,11 @@
     "static/media/icons8-twitter.svg": "/Cats/static/media/icons8-twitter.fe06d572bd13680e66f4.svg",
     "static/media/icons8-tiktok.svg": "/Cats/static/media/icons8-tiktok.14f350e3a13d061d74d4.svg",
     "static/media/icons8-facebook.svg": "/Cats/static/media/icons8-facebook.5e1cb4b86ac3f872dadc.svg",
-    "main.5822e596.css.map": "/Cats/static/css/main.5822e596.css.map",
-    "main.630a2562.js.map": "/Cats/static/js/main.630a2562.js.map"
+    "main.807cf5a4.css.map": "/Cats/static/css/main.807cf5a4.css.map",
+    "main.52e28fc8.js.map": "/Cats/static/js/main.52e28fc8.js.map"
   },
   "entrypoints": [
-    "static/css/main.5822e596.css",
-    "static/js/main.630a2562.js"
+    "static/css/main.807cf5a4.css",
+    "static/js/main.52e28fc8.js"
   ]
 }
